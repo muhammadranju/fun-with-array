@@ -1,5 +1,7 @@
-let arr = [12, 11, 25, 34, 49, 53, 77, 99, 51];
-
-arr.push(26);
-arr.push(65);
-arr.push(69);
+const response = new Array(9);
+response.fill(false);
+for (let i = 0; i < response.length; i++) {
+  const random = Math.floor(Math.random() * 10 + 1);
+  response[i] = random > 5 ? "X" : "O";
+}
+console.log(response);
